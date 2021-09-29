@@ -9,7 +9,7 @@ require(GEOquery)
 
 #http://www.ncbi.nlm.nih.gov/geo/browse/
 #GEO2R 
-myGSE = "GSE3821" # qin, demo 
+myGSE = "GSE163207" # qin, demo 
 
 gset <- getGEO(myGSE, GSEMatrix =TRUE)
 if (length(gset) > 1) idx <- grep("GPL90", attr(gset, "names")) else idx <- 1
